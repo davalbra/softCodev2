@@ -1,1 +1,115 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --alpha: 0.6;
+  --bravo: 0.5;
+  --first: #3da9fc;
+  --first-alpha: rgba(61, 169, 252, var(--alpha));
+  --first-bravo: rgba(61, 169, 252, var(--bravo));
+  --second: #90b4ce;
+  --second-alpha: rgba(144, 180, 206, var(--alpha));
+  --second-bravo: rgba(144, 180, 206, var(--bravo));
+  --third: #ef4565;
+  --third-alpha: rgba(239, 69, 101, var(--alpha));
+  --third-bravo: rgba(239, 69, 101, var(--bravo));
+  --fourth: #094067;
+  --fourth-alpha: rgba(9, 64, 103, var(--alpha));
+  --fourth-bravo: rgba(9, 64, 103, var(--bravo));
+  --fifth: #d8eefe;
+  --fifth-alpha: rgba(216, 238, 254, var(--alpha));
+  --fifth-bravo: rgba(216, 238, 254, var(--bravo));
+
+  --black: #5f6c7b;
+  --black-alpha: rgba(95, 108, 123, var(--alpha));
+  --black-bravo: rgb(95, 108, 123, var(--bravo));
+
+  --white: #fffffe;
+  --white-alpha: rgba(255, 255, 254, var(--alpha));
+  --white-bravo: rgb(255, 255, 254, var(--bravo));
+  // 1 Section
+    // Elements
+    --background: var(--white);
+    --headline: var(--fourth);
+    --paragraph: var(--black);
+    --sub-headline: var(--black);
+    --button: var(--first);
+    --button-text: var(--white);
+    --card-bg: var(--white);
+    --card-heading: var(--fourth);
+    --card-pg: var(--black);
+    // Illustration, icons
+    --stroke: var(--fourth);
+    --main: var(--white);
+    --highlight: var(--first);
+    --secondary: var(--second);
+    --tertiary: var(--third);
+
+}
+
+
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--button);
+  height: 100vh;
+  width: 100vw;
+}
+
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+
+h1 {
+  margin: 0;
+  font-size: 3.2rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+h5 {
+  margin: 0;
+  font-size: 1.36rem;
+}
+
+h6 {
+  margin: 0;
+  font-size: 1.12rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.6;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
