@@ -25,25 +25,23 @@
   --white-alpha: rgba(255, 255, 254, var(--alpha));
   --white-bravo: rgb(255, 255, 254, var(--bravo));
   // 1 Section
-    // Elements
-    --background: var(--white);
-    --headline: var(--fourth);
-    --paragraph: var(--black);
-    --sub-headline: var(--black);
-    --button: var(--first);
-    --button-text: var(--white);
-    --card-bg: var(--white);
-    --card-heading: var(--fourth);
-    --card-pg: var(--black);
-    // Illustration, icons
-    --stroke: var(--fourth);
-    --main: var(--white);
-    --highlight: var(--first);
-    --secondary: var(--second);
-    --tertiary: var(--third);
-
+  // Elements
+  --background: var(--white);
+  --headline: var(--fourth);
+  --paragraph: var(--black);
+  --sub-headline: var(--black);
+  --button: var(--first);
+  --button-text: var(--white);
+  --card-bg: var(--white);
+  --card-heading: var(--fourth);
+  --card-pg: var(--black);
+  // Illustration, icons
+  --stroke: var(--fourth);
+  --main: var(--white);
+  --highlight: var(--first);
+  --secondary: var(--second);
+  --tertiary: var(--third);
 }
-
 
 html {
   box-sizing: border-box;
@@ -58,13 +56,11 @@ body {
   width: 100vw;
 }
 
-
 *,
 *::after,
 *::before {
   box-sizing: inherit;
 }
-
 
 h1 {
   margin: 0;
@@ -113,3 +109,31 @@ ul {
   padding: 0;
   margin: 0;
 }
+// Custom.scss
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// etc
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+$primary: #ffa600;
+$danger: #ff4136;
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger,
+);
+
+// Create your own map
+$custom-colors: (
+  "custom-color": #900,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
