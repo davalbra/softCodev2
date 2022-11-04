@@ -24,17 +24,20 @@
   --white: #fffffe;
   --white-alpha: rgba(255, 255, 254, var(--alpha));
   --white-bravo: rgb(255, 255, 254, var(--bravo));
-  // 1 Section
+  // 1,3,5 Section
     // Elements
     --background: var(--white);
     --headline: var(--fourth);
     --paragraph: var(--black);
-    --sub-headline: var(--black);
     --button: var(--first);
     --button-text: var(--white);
-    --card-bg: var(--white);
-    --card-heading: var(--fourth);
-    --card-pg: var(--black);
+    --card-background: var(--fourth);
+    --card-highlight: var(--white);
+    --card-paragraph: var(--fifth);
+    --card-tag-background: var(--first);
+    --card-tag-text: var(--white);
+    --card-highlight: var(--third);
+    --links: var(--first);
     // Illustration, icons
     --stroke: var(--fourth);
     --main: var(--white);
