@@ -45,8 +45,8 @@
     --secondary: var(--second);
     --tertiary: var(--third);
 
-}
 
+}
 
 html {
   box-sizing: border-box;
@@ -61,13 +61,11 @@ body {
   width: 100vw;
 }
 
-
 *,
 *::after,
 *::before {
   box-sizing: inherit;
 }
-
 
 h1 {
   margin: 0;
@@ -116,3 +114,31 @@ ul {
   padding: 0;
   margin: 0;
 }
+// Custom.scss
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// etc
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+$primary: #ffa600;
+$danger: #ff4136;
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger,
+);
+
+// Create your own map
+$custom-colors: (
+  "custom-color": #900,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
